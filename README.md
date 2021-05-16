@@ -25,9 +25,9 @@ You need to set up a user and a database in PostgreSQL for twitterwatch. Execute
 
     sudo su postgres # Not necessary on Mac OS X
     createuser -s twitterwatch --pwprompt
-    createdb -O twitterwatch birdwatcher
+    createdb -O twitterwatch twitterwatch
 
-You now have a new PostgreSQL user with the name `twitterwatch` and with the password you typed into the prompt. You also created a database with the name `birdwatcher` which is owned by the `twitterwatch` user.
+You now have a new PostgreSQL user with the name `twitterwatch` and with the password you typed into the prompt. You also created a database with the name `twitterwatch` which is owned by the `twitterwatch` user.
 
 ### 4. Graphviz
 
