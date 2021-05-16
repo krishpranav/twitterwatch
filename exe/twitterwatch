@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require "twitterwatch"
+require "readline"
+
+trap "SIGINT" do 
+    print "\n"
+    Twitterwatch::Console.instance.warn("Caught interrupt; Exiting.")
+    exit
+end
+
+Twitterwatch::Console.instance.start!
